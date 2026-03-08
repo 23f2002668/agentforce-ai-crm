@@ -63,10 +63,15 @@ AgentForce CRM automatically fills missing CRM fields by combining reasoning, re
 Workflow:
 
 1️⃣ Detect missing fields
+
 2️⃣ Retrieve historical opportunity data
+
 3️⃣ Analyze similar deals
+
 4️⃣ Infer likely field values
+
 5️⃣ Update Salesforce records
+
 6️⃣ Log audit trail and metrics
 
 ---
