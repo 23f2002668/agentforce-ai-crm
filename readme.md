@@ -117,6 +117,57 @@ Confidence: 88%
 
 ![https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/system-architecture.png](https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/system-architecture.png)
 
+
+# JSON Output From API End-Point
+
+```
+{
+  "executor": {
+    "avg_confidence": 88,
+    "fields_updated": 3,
+    "salesforce_updated": true,
+    "time_saved": {
+      "hours_saved": 0.75,
+      "message": "Saved 45 minutes (3 fields × 15 min each)",
+      "minutes_saved": 45
+    },
+    "updates_made": [
+      {
+        "confidence": 92,
+        "field": "StageName",
+        "reason": "Based on similar deals in industry",
+        "value": "Negotiation"
+      },
+      {
+        "confidence": 87,
+        "field": "CloseDate",
+        "reason": "87% confidence based on sales cycle",
+        "value": "2026-04-01"
+      },
+      {
+        "confidence": 85,
+        "field": "Amount",
+        "reason": "Based on account history and similar deals",
+        "value": 50000
+      }
+    ]
+  },
+  "opportunity_id": "OPP-001",
+  "planner": {
+    "missing_fields": [
+      "StageName",
+      "CloseDate",
+      "Amount"
+    ]
+  },
+  "retriever": {
+    "account_history_count": 0,
+    "industry": "Technology",
+    "similar_deals_count": 10
+  }
+}
+```
+
 ---
 
 # Main WorkFlow
