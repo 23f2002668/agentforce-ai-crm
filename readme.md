@@ -102,8 +102,14 @@ Time saved: 45 minutes
 Confidence: 88%
 ```
 
+### Terminal Output :-
+
 ![https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/demo-1.png](https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/demo-1.png)
 ![https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/demo-2.png](https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/demo-2.png)
+
+### Web Application Output :-
+
+![https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/web-output.png](https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/web-output.png)
 
 ---
 
