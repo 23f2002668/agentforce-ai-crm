@@ -116,6 +116,34 @@ sequenceDiagram
 
 ---
 
+# 🛠 Technology Stack
+
+| Layer           | Technology                  |
+| --------------- | --------------------------- |
+| AI Models       | Phi-4-reasoning, Phi-4-mini |
+| Platform        | Azure AI Foundry            |
+| API Layer       | Azure OpenAI SDK            |
+| Backend         | Python                      |
+| CRM Integration | Salesforce API              |
+| Deployment      | Docker Ready                |
+
+---
+
+# 🔷 Microsoft Technologies Used
+
+1️⃣ Azure AI Foundry
+
+2️⃣ Phi-4-reasoning model
+
+3️⃣ Phi-4-mini-instruct model
+
+4️⃣ Azure OpenAI SDK
+
+5️⃣ Azure AI Content Safety
+
+
+---
+
 # 🔷 Salesforce Integration
 
 The system connects to Salesforce using a **Connected App and OAuth2 authentication**.
@@ -135,29 +163,6 @@ sf = Salesforce(
 accounts = sf.query("SELECT Id FROM Account")
 print(f"Connected! {len(accounts['records'])} accounts found")
 ```
-
----
-
-# 🛠 Technology Stack
-
-| Layer           | Technology                  |
-| --------------- | --------------------------- |
-| AI Models       | Phi-4-reasoning, Phi-4-mini |
-| Platform        | Azure AI Foundry            |
-| API Layer       | Azure OpenAI SDK            |
-| Backend         | Python                      |
-| CRM Integration | Salesforce API              |
-| Deployment      | Docker Ready                |
-
----
-
-# 🔷 Microsoft Technologies Used
-
-1️⃣ Azure AI Foundry
-2️⃣ Phi-4-reasoning model
-3️⃣ Phi-4-mini-instruct model
-4️⃣ Azure OpenAI SDK
-5️⃣ Azure AI Content Safety
 
 ---
 
