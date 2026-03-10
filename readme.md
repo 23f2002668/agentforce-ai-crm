@@ -80,92 +80,6 @@ Workflow:
 
 ---
 
-# 🎥 Demo
-
-Run the demo locally:
-
-```bash
-python demo.py
-```
-
-Example output:
-
-```
-Processing Opportunity: OPP-001
-
-Planner: Missing fields detected
-Retriever: Retrieved historical opportunities
-Executor: Updated Salesforce record
-
-Fields completed: 3
-Time saved: 45 minutes
-Confidence: 88%
-```
-
-### Terminal Output :-
-
-![https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/demo-1.png](https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/demo-1.png)
-![https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/demo-2.png](https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/demo-2.png)
-
-### Web Application Output :-
-
-![https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/web-output.png](https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/web-output.png)
-
----
-
-### JSON Output From API End-Point
-
-```
-{
-  "executor": {
-    "avg_confidence": 88,
-    "fields_updated": 3,
-    "salesforce_updated": true,
-    "time_saved": {
-      "hours_saved": 0.75,
-      "message": "Saved 45 minutes (3 fields × 15 min each)",
-      "minutes_saved": 45
-    },
-    "updates_made": [
-      {
-        "confidence": 92,
-        "field": "StageName",
-        "reason": "Based on similar deals in industry",
-        "value": "Negotiation"
-      },
-      {
-        "confidence": 87,
-        "field": "CloseDate",
-        "reason": "87% confidence based on sales cycle",
-        "value": "2026-04-01"
-      },
-      {
-        "confidence": 85,
-        "field": "Amount",
-        "reason": "Based on account history and similar deals",
-        "value": 50000
-      }
-    ]
-  },
-  "opportunity_id": "OPP-001",
-  "planner": {
-    "missing_fields": [
-      "StageName",
-      "CloseDate",
-      "Amount"
-    ]
-  },
-  "retriever": {
-    "account_history_count": 0,
-    "industry": "Technology",
-    "similar_deals_count": 10
-  }
-}
-```
-
----
-
-
 # 🏗 System Architecture
 
 ![https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/system-architecture.png](https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/system-architecture.png)
@@ -298,32 +212,125 @@ SF_CONSUMER_SECRET=
 ```
 AGENTFORCE-CRM/
 │
-├── 📄 .env                               # Environment variables (Azure + Salesforce credentials)
-├── 📄 .gitignore                         # Git ignore file
-├── 📄 README.md                          # Project documentation
-├── 📄 requirements.txt                   # Python dependencies
-├── 📄 Procfile                           # Render deployment configuration
-├── 📄 render.yaml                        # Render blueprint configuration (optional)
+├── 📄 .env                                         # Environment variables (Azure + Salesforce credentials)
+├── 📄 .gitignore                                   # Git ignore file
+├── 📄 README.md                                    # Project documentation
+├── 📄 requirements.txt                             # Python dependencies
+├── 📄 Procfile                                     # Render deployment configuration
+├── 📄 render.yaml                                  # Render blueprint configuration (optional)
 │
-├── 📄 app.py                             # Main orchestrator with AgentForceCRM class
-├── 📄 demo.py                            # CLI demo script
-├── 📄 config.py                          # Configuration management
-├── 📄 test_sf.py                         # Salesforce connection test
+├── 📄 app.py                                       # Main orchestrator with AgentForceCRM class
+├── 📄 demo.py                                      # CLI demo script
+├── 📄 config.py                                    # Configuration management
+├── 📄 test_sf.py                                   # Salesforce connection test
 │
-├── 📄 web_app.py                         # 🌐 PROFESSIONAL FLASK WEB APPLICATION
+├── 📄 web_app.py                                   # 🌐 PROFESSIONAL FLASK WEB APPLICATION
 │
-├── 📁 agents/                            # Agent modules
+├── 📁 agents/                                      # Agent modules
 │   ├── 📄 __init__.py
-│   ├── 📄 planner.py                     # Planner Agent logic
-│   ├── 📄 retriever.py                   # Retriever Agent logic
-│   └── 📄 executor.py                    # Executor Agent logic
+│   ├── 📄 planner.py                               # Planner Agent logic
+│   ├── 📄 retriever.py                             # Retriever Agent logic
+│   └── 📄 executor.py                              # Executor Agent logic
 │
-├── 📁 tools/                             # Utility modules
+├── 📁 tools/                                       # Utility modules
 │   ├── 📄 __init__.py
-│   └── 📄 salesforce_client.py           # Salesforce API client with OAuth2
+│   └── 📄 salesforce_client.py                     # Salesforce API client with OAuth2
 │
-└── 📁 data/                              # Sample data (optional)
-    └── 📄 sample_data.csv                # Sample accounts for Salesforce import
+├── 📁 data/                                        # Sample data (optional)
+│    └── 📄 sample_data.csv                         # Sample accounts for Salesforce import
+│
+└── 📁 images/                                      # Sample data (optional)
+    ├── 📄 demo-1.png                               # Output in terminal page-1
+    ├── 📄 demo-2.png                               # Output in terminal page-2
+    ├── 📄 web-output.png                           # Output of web application
+    ├── 📄 main-workflow.png                        # Workflow of application
+    ├── 📄 step-by-step-user-workflow.png           # User - Workflow of application
+    └── 📄 system-architecture.png                  # System architecture of application
+```
+
+---
+
+# 🎥 Demo
+
+Run the demo locally:
+
+```bash
+python demo.py
+```
+
+Example output:
+
+```
+Processing Opportunity: OPP-001
+
+Planner: Missing fields detected
+Retriever: Retrieved historical opportunities
+Executor: Updated Salesforce record
+
+Fields completed: 3
+Time saved: 45 minutes
+Confidence: 88%
+```
+
+### Terminal Output :-
+
+![https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/demo-1.png](https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/demo-1.png)
+![https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/demo-2.png](https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/demo-2.png)
+
+### Web Application Output :-
+
+![https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/web-output.png](https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/web-output.png)
+
+---
+
+### JSON Output From API End-Point
+
+```
+{
+  "executor": {
+    "avg_confidence": 88,
+    "fields_updated": 3,
+    "salesforce_updated": true,
+    "time_saved": {
+      "hours_saved": 0.75,
+      "message": "Saved 45 minutes (3 fields × 15 min each)",
+      "minutes_saved": 45
+    },
+    "updates_made": [
+      {
+        "confidence": 92,
+        "field": "StageName",
+        "reason": "Based on similar deals in industry",
+        "value": "Negotiation"
+      },
+      {
+        "confidence": 87,
+        "field": "CloseDate",
+        "reason": "87% confidence based on sales cycle",
+        "value": "2026-04-01"
+      },
+      {
+        "confidence": 85,
+        "field": "Amount",
+        "reason": "Based on account history and similar deals",
+        "value": 50000
+      }
+    ]
+  },
+  "opportunity_id": "OPP-001",
+  "planner": {
+    "missing_fields": [
+      "StageName",
+      "CloseDate",
+      "Amount"
+    ]
+  },
+  "retriever": {
+    "account_history_count": 0,
+    "industry": "Technology",
+    "similar_deals_count": 10
+  }
+}
 ```
 
 ---
