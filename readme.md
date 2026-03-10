@@ -217,40 +217,45 @@ SF_CONSUMER_SECRET=
 ```
 AGENTFORCE-CRM/
 │
-├── 📄 .env                                         # Environment variables (Azure + Salesforce credentials)
-├── 📄 .gitignore                                   # Git ignore file
-├── 📄 README.md                                    # Project documentation
-├── 📄 requirements.txt                             # Python dependencies
-├── 📄 Procfile                                     # Render deployment configuration
-├── 📄 render.yaml                                  # Render blueprint configuration (optional)
+├── 📄 .env                                                                           # Environment variables (Azure + Salesforce credentials)
+├── 📄 .gitignore                                                                     # Git ignore file
+├── 📄 README.md                                                                      # Project documentation
+├── 📄 requirements.txt                                                               # Python dependencies
+├── 📄 Procfile                                                                       # Render deployment configuration
+├── 📄 render.yaml                                                                    # Render blueprint configuration (optional)
 │
-├── 📄 app.py                                       # Main orchestrator with AgentForceCRM class
-├── 📄 demo.py                                      # CLI demo script
-├── 📄 config.py                                    # Configuration management
-├── 📄 test_sf.py                                   # Salesforce connection test
+├── 📄 app.py                                                                         # Main orchestrator with AgentForceCRM class
+├── 📄 demo.py                                                                        # CLI demo script
+├── 📄 config.py                                                                      # Configuration management
+├── 📄 test_sf.py                                                                     # Salesforce connection test
 │
-├── 📄 web_app.py                                   # 🌐 PROFESSIONAL FLASK WEB APPLICATION
+├── 📄 web_app.py                                                                     # 🌐 PROFESSIONAL FLASK WEB APPLICATION
 │
-├── 📁 agents/                                      # Agent modules
+├── 📁 agents/                                                                        # Agent modules
 │   ├── 📄 __init__.py
-│   ├── 📄 planner.py                               # Planner Agent logic
-│   ├── 📄 retriever.py                             # Retriever Agent logic
-│   └── 📄 executor.py                              # Executor Agent logic
+│   ├── 📄 planner.py                                                                 # Planner Agent logic
+│   ├── 📄 retriever.py                                                               # Retriever Agent logic
+│   └── 📄 executor.py                                                                # Executor Agent logic
 │
-├── 📁 tools/                                       # Utility modules
+├── 📁 tools/                                                                         # Utility modules
 │   ├── 📄 __init__.py
-│   └── 📄 salesforce_client.py                     # Salesforce API client with OAuth2
+│   └── 📄 salesforce_client.py                                                       # Salesforce API client with OAuth2
 │
-├── 📁 data/                                        # Sample data (optional)
-│    └── 📄 sample_data.csv                         # Sample accounts for Salesforce import
+├── 📁 data/                                                                          # Sample data (optional)
+│    └── 📄 sample_data.csv                                                           # Sample accounts for Salesforce import
+│ 
+├── 📁 documents/                                                                     # Presentation and user guide
+│    ├── 📄 Complete User Guide.pdf                                                   # User Guide
+│    ├── 📄 MOON-Lab (Shahzada Moon) Microsoft AI Unlocked Presentation.key           # KEYNOTE Presentation
+│    └── 📄 MOON-Lab (Shahzada Moon) Microsoft AI Unlocked Presentation.pdf           # PDF Presentation
 │
-└── 📁 images/                                      # Sample data (optional)
-    ├── 📄 demo-1.png                               # Output in terminal page-1
-    ├── 📄 demo-2.png                               # Output in terminal page-2
-    ├── 📄 web-output.png                           # Output of web application
-    ├── 📄 main-workflow.png                        # Workflow of application
-    ├── 📄 step-by-step-user-workflow.png           # User - Workflow of application
-    └── 📄 system-architecture.png                  # System architecture of application
+└── 📁 images/                                                                        # Images
+    ├── 📄 demo-1.png                                                                 # Output in terminal page-1
+    ├── 📄 demo-2.png                                                                 # Output in terminal page-2
+    ├── 📄 web-output.png                                                             # Output of web application
+    ├── 📄 main-workflow.png                                                          # Workflow of application
+    ├── 📄 step-by-step-user-workflow.png                                             # User - Workflow of application
+    └── 📄 system-architecture.png                                                    # System architecture of application
 ```
 
 ---
