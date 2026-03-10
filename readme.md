@@ -106,21 +106,19 @@ Confidence: 88%
 
 # 🏗 System Architecture
 
-```
-Salesforce CRM
-      │
-      ▼
-Orchestrator (app.py)
-      │
- ┌───────────────┬───────────────┐
- ▼               ▼               ▼
-Planner       Retriever       Executor
-(Phi-4)       (Phi-4 mini)    (Phi-4 mini)
-      │
-      ▼
-Updated Salesforce Records
-+ Audit Logs + Metrics
-```
+![https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/system-architecture.png](https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/system-architecture.png)
+
+---
+
+# Main WorkFlow
+
+![https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/main-workflow.png](https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/main-workflow.png)
+
+---
+
+# Step-By-Step User WorkFlow
+
+![https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/step-by-step-user-workflow.png](https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/step-by-step-user-workflow.png)
 
 ---
 
