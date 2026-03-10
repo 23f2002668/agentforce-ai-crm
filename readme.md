@@ -113,11 +113,6 @@ Confidence: 88%
 
 ---
 
-# 🏗 System Architecture
-
-![https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/system-architecture.png](https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/system-architecture.png)
-
-
 # JSON Output From API End-Point
 
 ```
@@ -169,6 +164,14 @@ Confidence: 88%
 ```
 
 ---
+
+
+# 🏗 System Architecture
+
+![https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/system-architecture.png](https://github.com/23f2002668/agentforce-ai-crm/blob/main/images/system-architecture.png)
+
+---
+
 
 # Main WorkFlow
 
